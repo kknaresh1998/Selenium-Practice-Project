@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="FrameworkPractice.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Error Validation login(failed)">
+    <classes>
+      <class name="FrameworkPractice.Test.ErrorValidation">
+        <methods>
+          <include name="tearDown"/>
+          <include name="lunchApplication"/>
+          <include name="loginErrorValidation"/>
+        </methods>
+      </class> <!-- FrameworkPractice.Test.ErrorValidation -->
+    </classes>
+  </test> <!-- Error Validation login(failed) -->
+</suite> <!-- Failed suite [Suite] -->
